@@ -10,3 +10,4 @@ build:
   artifacts:
     paths:
       - "*.pdf"
+    expire_in: 1 week
