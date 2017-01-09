@@ -15,5 +15,5 @@ $(FR_TARGET): cv.tex
 	mv cv.pdf lemolgat_corentin_FR.pdf
 
 clean:
-	$(RM) *.aux *.log cv.pdf
+	$(RM) *.aux *.log *.out cv.pdf
 	perl -p -i -e 's/selectlanguage\{french\}/selectlanguage\{english\}/g' ./cv.tex
