@@ -5,18 +5,16 @@
 \usepackage{iflang}
 \usepackage{resume}
 \begin{document}
-\selectlanguage{english}
+\selectlanguage{french}
 
 \name{\bf Corentin LE MOLGAT}
 \begin{llist}
 \sectiontitle{Education}
 \employer{ENSEIRB} \location{Bordeaux, France}
 \dates{09/2006--10/2009}
-\IfLanguageName{english}
-{
-Engineer's Degree in Computer Science with a speciality in HPC (High Performance Computing).
-}
-{
+\IfLanguageName{english} {
+B.S./M.S., in Computer Science with a specialty in HPC (High Performance Computing).
+} {
 Dipl\^{o}me d'ing\'{e}nieur en Informatique option PRCD (Parall\'{e}lisme,
 R\'{e}gulation et Calcul Distribu\'{e}).
 }
@@ -30,24 +28,24 @@ R\'{e}gulation et Calcul Distribu\'{e}).
 \employer{Aldebaran Robotics/SoftBank Robotics Europe}\location{Paris, France}
 \dates{04/2012--now}
 \IfLanguageName{english} {
-R\&D Computer Vision \& Embedded System Software Engineer\\
+R\&D Computer Vision \& Embedded System Software Engineer.\\
 \vspace{-0.33cm}
 
 System Team:
 \begin{itemize}
 \item Maintenance/Development Kernel Linux SoC Driver (C, MT9M114, OV5640).
-\item Management of camera firmware flasher in the robot distro (Gentoo \& Yocto, C++).
+\item Development of a camera firmware flasher in robot OS (Gentoo \& Yocto, C++).
 \item Management of a subcontractor for the development of an UVC compliant firmware (CMake/qiBuild, Docker, C++, Catch, Plantuml).
 \end{itemize}
 Vision Team:
 \begin{itemize}
-\item Maintenance/Rework of C++ Framework to manage Robot Cameras in NAOqi for multiple clients at the same time (qiBuild, C++, libqi).
+\item Maintenance/Rework of C++ Framework to manage Robot Cameras in robot OS for multiple clients at the same time (CMake, C++, Boost).
 \item Development of Camera Viewer Tooling (C++, Qt).
 \item Design/Development/Maintenance of Modularity (a C++ Computation Graph Framework for Perception).
 \item Development/Maintenance of the internal CI Builfarm and Training (Jenkins,
  gcovr).
-\item Training \& Support CMake as senior developper.
-\item Training \& Support C++ as senior developper.
+\item Training \& Support CMake as senior developer.
+\item Training \& Support C++ as senior developer.
 \end{itemize}
 Misc:
 \begin{itemize}
@@ -58,33 +56,48 @@ Misc:
 R\&D Ing\'{e}nieur Informaticien Vision et Syst\`{e}me embarqu\'{e}
 \vspace{-0.33cm}
 Equipe Syst\`{e}me:
+
 Equipe Vision:
+
 }
 
 \employer{Vi Technology}\location{St-Egr\`{e}ve, France}
 \dates{02/2010--12/2011}
 \IfLanguageName{english} {
-R\&D GPGPU Computer Software Engineer\\
+R\&D GPGPU and Vision System Software Engineer.\\
 \vspace{-0.33cm}
 
-Responsible for the design of the whole Acquisition and Processing Pipeline of a
-	new Automated Optical Inspection Systems for SPI(Solder Past Inspection)
-	running on Linux (Fedora).
+Responsible for the design and development of the whole Acquisition and Processing Pipeline
+for a new AOI(Automated Optical Inspection) Systems for SPI(Solder Past Inspection)
+ running on Linux (Fedora).
 \begin{itemize}
-\item Port of 3D Reconstruction algorithm (Matlab) from Algorithm Team to Dual-GPU System (CMake, C++, CUDA 4, GTX 480)
-\item Developement of a "CMake cross toolchain" for CUDA files.
- Speed up from 15s to 7ms (x2000!) between Matlab and CUDA...
-\item Management of two co-worker to speed up development (Roadmap, Code Review, Scrum Master)
-\item Development of a Linux Kernel Device Driver (for PCIe Vertex-6 Card)
+% Hardware
+\item Lead Software of the Hardware Acquisition System Integration (Vertex-6 Card on PCIe)
 \begin{itemize}
-\item Management of the FPGA integrator
-\item Development of Debugger tools (C++, Qt), Protocol Definition and Kernel Device Driver (C)
+\item Management of the FPGA integrator.
+\item Definition of the Protocol between Kernel and the acquisition card.
+\item Development of the Kernel Device Driver (C).
+\item Development of Debugger tools (C++, Qt).
 \end{itemize}
-\item Development of a C++ Middleware to grab and manage images from several dozen of image sensors.
+% Software
+\item Lead Software of the Image Pipeline.
+\begin{itemize}
+\item Development of a C++ Middleware to grab and manage images from several dozens of image sensors.
+\item Management of two co-worker to speed up development (Roadmap, Code Review, Scrum Master)
 \item Development of a 3D PCB Viewer (after 3D reconstruction) using (C++, Qt, OpenSceneGraph).
 \item Development of a 2D Camera Image Viewer (C++, Qt, OpenSceneGraph).
 \end{itemize}
+% GPGPU
+\item Lead Software of the GPGPU Post-Processing Pipeline.
+\begin{itemize}
+\item Port of 3D Reconstruction algorithm (Matlab) from Algorithm Team to Dual-GPU System (CMake, C++, CUDA 4, GTX 480)
+ Speed up from 15s to 7ms (x2000!) between Matlab and CUDA...
+\item Developement of a "CMake cross toolchain" for managing CUDA files.
+\end{itemize}
+\end{itemize}
+
 Misc:
+Various support as Lead Technical on GNU/Linux.
 \begin{itemize}
 \item CMake Training \& Support
 \item Jenkins Training \& Support (POC, Setup, Design)
@@ -92,7 +105,7 @@ Misc:
 \end{itemize}
 } {}
 
-
+% Internship
 \employer{Kyushu University}\location{Kyushu University, Fukuoka, JAPAN}
 \dates{04/2009--10/2009}
 \IfLanguageName{english} {
