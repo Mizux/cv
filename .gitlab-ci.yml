@@ -6,8 +6,8 @@ image: blang/latex
 
 build:
   script:
-    - latexmk -pdf
+    - latexmk -pdf cv.tex
   artifacts:
     paths:
-      - "*.pdf"
+      - "cv.pdf"
     expire_in: 1 week
