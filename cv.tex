@@ -1,0 +1,145 @@
+\documentclass{article}
+
+\usepackage[french,english]{babel}
+\usepackage{eurosym}
+\usepackage{iflang}
+\usepackage{resume}
+\begin{document}
+\selectlanguage{french}
+
+\name{\bf Corentin LE MOLGAT}
+\begin{llist}
+\sectiontitle{Education}
+\employer{ENSEIRB} \location{Bordeaux, France}
+\dates{09/2006--10/2009}
+\IfLanguageName{english}
+{
+Engineer's Degree in Computer Science with a speciality in HPC (High Performance Computing).
+}
+{
+Dipl\^{o}me d'ing\'{e}nieur en Informatique option PRCD (Parall\'{e}lisme,
+R\'{e}gulation et Calcul Distribu\'{e}).
+}
+
+% Working Experience
+\IfLanguageName{english}
+{\sectiontitle{Work Experience}}
+{\sectiontitle{Exp\'{e}rience Professionnelle}}
+\vspace{-0.33cm}
+
+\employer{Aldebaran Robotics/SoftBank Robotics Europe}\location{Paris, France}
+\dates{04/2012--now}
+\IfLanguageName{english} {
+R\&D Computer Vision \& Embedded System Software Engineer\\
+\vspace{-0.33cm}
+
+System Team:
+\begin{itemize}
+\item Maintenance/Development Kernel Linux SoC Driver (C, MT9M114, OV5640).
+\item Management of camera firmware flasher in the robot distro (Gentoo \& Yocto, C++).
+\item Management of a subcontractor for the development of an UVC compliant firmware (CMake/qiBuild, Docker, C++, Catch, Plantuml).
+\end{itemize}
+Vision Team:
+\begin{itemize}
+\item Maintenance/Rework of C++ Framework to manage Robot Cameras in NAOqi for multiple clients at the same time (qiBuild, C++, libqi).
+\item Development of Camera Viewer Tooling (C++, Qt).
+\item Design/Development/Maintenance of Modularity (a C++ Computation Graph Framework for Perception).
+\item Development/Maintenance of the internal CI Builfarm and Training (Jenkins,
+ gcovr).
+\item Training \& Support CMake as senior developper.
+\item Training \& Support C++ as senior developper.
+\end{itemize}
+Misc:
+\begin{itemize}
+\item Vision System Support for Innovation Team and Research Partners.
+\item Support on Production Line, Yantai (China), 1 month.
+\end{itemize}
+}{
+R\&D Ing\'{e}nieur Informaticien Vision et Syst\`{e}me embarqu\'{e}
+\vspace{-0.33cm}
+Equipe Syst\`{e}me:
+Equipe Vision:
+}
+
+\employer{Vi Technology}\location{St-Egr\`{e}ve, France}
+\dates{02/2010--12/2011}
+\IfLanguageName{english} {
+R\&D GPGPU Computer Software Engineer\\
+\vspace{-0.33cm}
+
+Responsible for the design of the whole Acquisition and Processing Pipeline of a
+	new Automated Optical Inspection Systems for SPI(Solder Past Inspection)
+	running on Linux (Fedora).
+\begin{itemize}
+\item Port of 3D Reconstruction algorithm (Matlab) from Algorithm Team to Dual-GPU System (CMake, C++, CUDA 4, GTX 480)
+\item Developement of a "CMake cross toolchain" for CUDA files.
+ Speed up from 15s to 7ms (x2000!) between Matlab and CUDA...
+\item Management of two co-worker to speed up development (Roadmap, Code Review, Scrum Master)
+\item Development of a Linux Kernel Device Driver (for PCIe Vertex-6 Card)
+\begin{itemize}
+\item Management of the FPGA integrator
+\item Development of Debugger tools (C++, Qt), Protocol Definition and Kernel Device Driver (C)
+\end{itemize}
+\item Development of a C++ Middleware to grab and manage images from several dozen of image sensors.
+\item Development of a 3D PCB Viewer (after 3D reconstruction) using (C++, Qt, OpenSceneGraph).
+\item Development of a 2D Camera Image Viewer (C++, Qt, OpenSceneGraph).
+\end{itemize}
+Misc:
+\begin{itemize}
+\item CMake Training \& Support
+\item Jenkins Training \& Support (POC, Setup, Design)
+\item Linux Training \& Support (Bash, Fedora) (everyone were Windows developers...)
+\end{itemize}
+} {}
+
+
+\employer{Kyushu University}\location{Kyushu University, Fukuoka, JAPAN}
+\dates{04/2009--10/2009}
+\IfLanguageName{english} {
+Engineering Intern at I.R.V.S. (Laboratory For Intelligent Robots \& Vision System)
+\vspace{-0.33cm}
+\begin{itemize}
+\item Design (UML), Implementation (C++) and tooling viewer (C++, Qt) of a
+3D Human Pose Estimation using non-parametric Belief Propagation
+algorithm and multiple 2D video cameras.
+\end{itemize}
+} {}
+
+\employer{Kyushu University}\location{Kyushu University, Fukuoka, JAPAN}
+\dates{06/2008--09/2008}
+\IfLanguageName{english} {
+Engineering Intern at I.R.V.S. (Laboratory For Intelligent Robots \& Vision System)
+\vspace{-0.33cm}
+\begin{itemize}
+\item 3D Reconstruction on GPU (GLSL) and tooling viewer (C++, Qt) using stereovision algorithm and four 2D video cameras.
+\end{itemize}
+} {}
+
+% Skills
+\IfLanguageName{english} {
+\sectiontitle{Skills}
+{\em Competence}: Image Pipeline, Robotics, Programming, Architecture, Management \\
+{\em Programming Languages}: C, C++ \\
+{\em Programming Libraries}: STL, OpenCV, Boost, OpenMP, MPI \\
+{\em Extra Interests}: Android, CUDA, GLSL \\
+{\em Languages}: French (native), English (fluent), Japanese (beginner), Spanish
+(beginner) \\
+} {
+\sectiontitle{Comp\'{e}tences}
+{\em Comp\'{e}tences}: Vision, Robotique, Programmation, Architecte Logiciel,
+Management \\
+{\em Langages de Programmation}: C, C++ \\
+{\em Biblioth\`{e}ques Logicielles}: STL, OpenCV, Boost, OpenMP, MPI \\
+{\em Autres Int\'{e}r\^{e}ts}: Android, CUDA, GLSL \\
+{\em Langues}: Fran\c{c}ais (natif), Anglais (fluent), Espagnol (d\'{e}butant),
+Japonais (d\'{e}butant) \\
+}
+
+% References
+\sectiontitle{References}
+\input{references.tex}
+\end{llist}
+
+{\em Last update: \today}
+
+\end{document}
