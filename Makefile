@@ -2,7 +2,7 @@
   EN_TARGET = lemolgat_corentin_EN.pdf
   FR_TARGET = lemolgat_corentin_FR.pdf
 
-all: clean $(EN_TARGET) $(FR_TARGET) clean
+all: clean $(EN_TARGET) $(FR_TARGET)
 	perl -p -i -e 's/selectlanguage\{french\}/selectlanguage\{english\}/g' ./cv.tex
 
 $(EN_TARGET): cv.tex
