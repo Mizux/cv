@@ -1,0 +1,91 @@
+%%%%%%%%%%%
+% Summary %
+%%%%%%%%%%%
+Computer Vision & System Software Engineer:
+. Strong CMake/C++ Background.
+. Development of native CMake/C++/Qt Application.
+. Development of Linux Kernel Camera Driver (MT9M114, OV5640).
+
+I'm currently living at Tours (France), and working for SoftBank Robotics Europe
+(Paris). I'm maily focus on the support of image pipeline from
+the image sensor (i.e. linux driver support and integration) to our middleware
+NAOqi (i.e. Video Manager Service) on our humanoid robots.
+
+Before working for SoftBank Robotics Europe and Vi TECHNOLOGY, I have benefited of the elite
+program of the higher education system in France (Grandes Écoles) where I gained
+knowledge in field of Computer Science. I hold an Engineering Diploma (M. Eng.) from ENSEIRB (Bordeaux, France) which is a Graduate School of Engineering in Electronics, Computer Science and Communication Technologies.
+
+I have mostly carried out research and development engineering projects
+(managing team on occasions) for Automated Optical Inspection System and Humanoid Robots.
+I have acquired over the years a wide range of skills, be it in Application
+Software (Qt, C++), high performance computing (CUDA, C++)
+or in driver development for Linux Embedded System (Linux Kernel, C).
+Besides engineering, I am currently interested in the management of
+projects and technical expertise, especially because I wish to be able to use my knowledge and share it.
+I would definitely appreciate going abroad from time to time through my job.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% R&D Computer Vision & System Software Engineer %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+SoftBank Robotics Europe
+April 2012 – Present (4 years 10 months)43 Rue du Colonel Pierre Avia, 75015 Paris
+System Team since 2015:
+* Maintenance/Development Kernel Linux Camera Driver (C, MT9M114, OV5640)
+* Management of Vision System in NAOqi (qiBuild, C++).
+Perception Team 2012-2015:
+* Design/Development/Maintenance of Modularity (a C++ Computation Graph Framework for Perception)
+* Maintenance/Rework of C++ Framework to manage Robot Cameras in NAOqi (qiBuild, C++).
+* Development/Maintenance of Team internal Builfarm (Jenkins)
+* Training & Support CMake.
+* Training & Support C++.
+Misc:
+* Vision System Support for Innovation Team and Research Partners.
+* Support on Production Line, Yantai (China), 1 month.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% GPGPU Computer Software Engineer %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Vi TECHNOLOGY
+February 2010 – December 2011 (1 year 11 months)St-Egrève
+Responsible for the design of the whole Acquisition and Processing Pipeline of a new Automated Optical Inspection Systems running on Linux (for Solder Past Inspection).
+
+* Port of 3D Reconstruction algorithm (Matlab) from Algorithm Team to Dual-GPU System (CMake, C++, CUDA 4, GTX 480)
+** Developement of a "CMake cross toolchain" for CUDA files.
+** Speed up from 15s to 7ms (x2000!) between Matlab and CUDA...
+* Management of two co-worker to speed up development (Roadmap, Code Review, Scrum Master)
+* Development of a Linux Kernel Device Driver (for PCIe Vertex-6 Card)
+** Management of the FPGA integrator, providing Qt Debugger tools, Protocol Definition etc..
+* Development of a C++ Middleware to grab and manage images from several dozen of Camera sensors.
+* Development of a 3D PCB Viewer (after 3D reconstruction) using Qt and OpenSceneGraph.
+* Development of a 2D Camera Image Viewer.
+Misc:
+* CMake Training & Support
+* Jenkins Training & Support (POC, Setup, Design)
+* Linux(Fedora) & Bash Training & Support (everyone were Windows developers...)
+
+%%%%%%%%%%%
+% ENSEIRB %
+%%%%%%%%%%%
+Engineer’s Degree, Computer Software Engineering
+2006 – 2009
+Computer Software Engineering.
+High Performance Computing
+Activities and Societies: * President of the Demoscene club, * Member of the Juggling Club
+
+%%%%%%%%%%%%%%%%%%%%%
+% Kyushu University %
+%%%%%%%%%%%%%%%%%%%%%
+Engineering Intern, Robotics, Computer Vision
+2009 – 2009
+Internship at I.R.V.S.
+- Design (UML), Implementation (C++) and tooling viewer (Qt) of a Pose Estimation using non-parametric Belief Propagation algorithm.
+src: http://machinelearning.wustl.edu/mlpapers/paper_files/NIPS2003_VM07.pdf
+- 6 months
+
+%%%%%%%%%%%%%%%%%%%%%
+% Kyushu University %
+%%%%%%%%%%%%%%%%%%%%%
+Engineering Intern, Robotics, Computer vision
+2008 – 2008
+Internship at I.R.V.S.
+- 3D Reconstruction on GPU (GLSL) using stereovision algorithm and 4 Cameras
+- 4 months.
