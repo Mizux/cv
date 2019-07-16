@@ -1,9 +1,13 @@
 # the build target executable:
-  EN_TARGET = lemolgat_corentin_EN.pdf
-  FR_TARGET = lemolgat_corentin_FR.pdf
+EN_TARGET = lemolgat_corentin_EN.pdf
+FR_TARGET = lemolgat_corentin_FR.pdf
 
-all: clean $(EN_TARGET) $(FR_TARGET)
+
+all: clean en fr
 	perl -p -i -e 's/selectlanguage\{french\}/selectlanguage\{english\}/g' ./cv.tex
+
+en: $(EN_TARGET)
+fr: $(FR_TARGET)
 
 $(EN_TARGET): cv.tex
 	perl -p -i -e 's/selectlanguage\{french\}/selectlanguage\{english\}/g' ./cv.tex
