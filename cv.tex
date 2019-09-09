@@ -6,7 +6,7 @@
 \usepackage{resume}
 \usepackage{hyperref}
 \begin{document}
-\selectlanguage{french}
+\selectlanguage{english}
 
 \name{\bf Corentin LE MOLGAT}
 
@@ -26,9 +26,11 @@ R\'{e}gulation et Calcul Distribu\'{e}).
 }
 
 % Working Experience
-\IfLanguageName{english}
-{\sectiontitle{Work Experience}}
-{\sectiontitle{Exp\'{e}rience Professionnelle}}
+\IfLanguageName{english} {
+\sectiontitle{Work Experience}
+} {
+\sectiontitle{Exp\'{e}rience Professionnelle}
+}
 \vspace{-0.33cm}
 
 \employer{Kelly Services as contractor at Google}\location{Paris, France}
@@ -40,21 +42,32 @@ Open Source Software Release Manager \\
 Optimization Team:
 \vspace{-0.33cm}
 \begin{itemize}
-\item released several versions of \href{https://github.com/google/or-tools}{\texttt{Google OR-Tools}}.
-\item reworked and maintained the online documentation (HTML, markdown, doxygen).
-\item provided support to customer.
-\item developed and maintained few samples (C++, Java, Python, .Net).
-\item maintained the Makefile based build system (Makefile, bash).
-\item developed and maintained the CMake based build system (CMake).
-\item developed and maintained a public CI system (Travis CI, Appveyor, Docker).
-\item provided training \& support for CMake.
+	\item Released several versions of \href{https://github.com/google/or-tools}{\texttt{Google OR-Tools}} (PyPI, Nuget, GitHub).
+	\item Reworked and maintained the online documentation (HTML, markdown, doxygen).
+	\item Provided support to customer (GitHub issues, Stack Overflow).
+	\item Developed and maintained few samples (C++, Java, Python, .Net).
+	\item Maintained the Makefile based build system (Makefile, bash).
+	\item Developed and maintained the CMake based build system (CMake).
+	\item Developed and maintained a public CI system (Travis CI, Appveyor, Docker).
+	\item Provided training \& support for CMake.
 \end{itemize}
-}{
+} {
 Open Source Software Release Manager \\
 \vspace{-0.33cm}
 
 Equipe Optimization:
 \vspace{-0.33cm}
+\begin{itemize}
+	\item Publication de plusieurs versions de
+		\href{https://github.com/google/or-tools}{\texttt{Google OR-Tools}} (PyPI, Nuget, GitHub).
+  \item Refonte et maintenance de la documention en ligne (HTML, markdown, doxygen).
+  \item Support proposé aux utilisateurs (GitHub issues, Stack Overflow).
+  \item D\'{e}veloppement et maintenance de plusieurs examples (C++, Java, Python, .Net).
+  \item Maintenance du syst\`{e}me de build utilisant Makefile (Makefile, bash).
+  \item D\'{e}veloppement et maintenance du syst\`{e}me de build utilisant CMake (CMake).
+  \item D\'{e}veloppement et maintenance du syst\`{e}me d'int\'{e}gration continue publique (Travis CI, Appveyor, Docker).
+  \item Formation \& support apportés sur CMake.
+\end{itemize}
 }
 
 \employer{Aldebaran Robotics/SoftBank Robotics Europe}\location{Paris, France}
@@ -66,51 +79,51 @@ Embedded System \& Computer Vision Software Engineer \\
 System Team:
 \vspace{-0.33cm}
 \begin{itemize}
-\item developed and maintained a Kernel Linux SoC Driver (C, MT9M114, OV5640).
-\item developed a camera firmware flasher (Archlinux \& Yocto, C++).
-\item managed a contractor for an UVC compliant firmware (CMake, Docker, C++, Catch, GTest, Plantuml).
+	\item Developed and maintained a Kernel Linux SoC Driver (C, MT9M114, OV5640).
+	\item Developed a camera firmware flasher (Archlinux \& Yocto, C++).
+	\item Managed a contractor for an UVC compliant firmware (CMake, Docker, C++, Catch, GTest, Plantuml).
 \end{itemize}
 Vision Team:
 \vspace{-0.33cm}
 \begin{itemize}
-\item reworked and maintained a C++ framework for multi-client access to robot cameras (CMake, C++, Boost).
-\item developed tooling for a camera viewer (C++, Qt).
-\item developed Modularity, a C++ computational graph framework for perception.
-\item maintained the internal CI builfarm, testing and training (Jenkins,
- gcovr).
-\item provided training \& support for CMake and C++ as a senior developer.
+	\item Reworked and maintained a C++ framework for multi-client access to robot cameras (CMake, C++, Boost).
+	\item Developed tooling for a camera viewer (C++, Qt).
+	\item Developed Modularity, a C++ computational graph framework for perception.
+	\item Maintained the internal CI builfarm, testing and training (Jenkins,
+		gcovr).
+	\item Provided training \& support for CMake and C++ as a senior developer.
 \end{itemize}
 Misc:
 \vspace{-0.33cm}
 \begin{itemize}
-\item supported the vision system for the R \& D team and research partners.
-\item provided support on the production line, Yantai (China), 1 month.
+	\item Supported the vision system for the R \& D team and research partners.
+	\item Provided support on the production line, Yantai (China), 1 month.
 \end{itemize}
-}{
+} {
 R\&D Ing\'{e}nieur Informaticien Vision et Syst\`{e}me embarqu\'{e}
 \vspace{-0.33cm}
 
 Equipe Syst\`{e}me:
 \vspace{-0.33cm}
 \begin{itemize}
-\item d\`{e}velopement et maintenance d'un driver SoC pour Kernel Linux (C, MT9M114, OV5640).
-\item d\`{e}velopement d'un chargeur de micrologiciel (firmware) pour une camera (Archlinux \& Yocto, C++).
-\item management d'un fournisseur pour un micrologiciel compatible UVC (CMake, Docker, C++, Catch, GTest, Plantuml).
+\item D\'{e}veloppement et maintenance d'un driver SoC pour un noyau Linux (C, MT9M114, OV5640).
+\item D\'{e}veloppement d'un chargeur de micrologiciel (firmware) pour une cam\'{e}ra (Archlinux \& Yocto, C++).
+\item Management d'un fournisseur pour un micrologiciel compatible UVC (CMake, Docker, C++, Catch, GTest, Plantuml).
 \end{itemize}
 Equipe Vision:
 \vspace{-0.33cm}
 \begin{itemize}
-\item refonte and maintenance d'un framework C++ for l'acces multi-clients aux cameras du robot (CMake, C++, Boost).
-\item d\`{e}velopement d'outils de visualisation pour cameras (C++, Qt).
-\item d\`{e}velopement de Modularity, un framework C++ de graph de calcul pour Perception.
-\item maintenance d'une builfarm d'int\`{e}gration continue interne, test et formation (Jenkins, gcovr).
-\item formation \& support sur CMake et C++ en tant que developpeur senior.
+	\item Refonte et maintenance d'un framework C++ pour l'acc\`{e}s multi-clients aux cam\'{e}ras du robot (CMake, C++, Boost).
+	\item D\'{e}velopement d'outils de visualisation pour cameras (C++, Qt).
+	\item D\'{e}velopement de Modularity, un framework C++ de graph de calcul pour Perception.
+	\item Maintenance d'une builfarm d'int\`{e}gration continue interne, test et formation (Jenkins, gcovr).
+	\item Formation \& support sur CMake et C++ en tant que d\'{e}veloppeur s\'{e}nior.
 \end{itemize}
 Divers:
 \vspace{-0.33cm}
 \begin{itemize}
-\item support du systeme de vision pour l'equipe de R \& D et les partenaires de recherche.
-\item support sur la ligne de production, Yantai (Chine), 1 mois.
+	\item Support du syst\`{e}me de vision pour l'\'{e}quipe de R \& D et les partenaires de recherche.
+	\item Support sur la ligne de production, Yantai (Chine), 1 mois.
 \end{itemize}
 }
 
@@ -128,37 +141,79 @@ for a new AOI (Automated Optical Inspection) system for SPI (Solder Past Inspect
 Software lead for the hardware acquisition system integration (Vertex-6 Card on PCIe):
 \vspace{-0.33cm}
 \begin{itemize}
-\item managed the integration of the FPGA.
-\item defined the protocol between the Kernel and the acquisition card.
-\item developed the Kernel device driver (C).
-\item developed debugger tools (C++, Qt).
+	\item Managed the integration of the FPGA.
+	\item Defined the protocol between the Kernel and the acquisition card.
+	\item Developed the Kernel device driver (C).
+	\item Developed debugger tools (C++, Qt).
 \end{itemize}
 % Software
 Software lead on the image pipeline:
 \vspace{-0.33cm}
 \begin{itemize}
-\item developed a C++ middleware to grab and manage images from several dozens of image sensors.
-\item managed two co-workers to speed up development (roadmap, code review, scrum master)
-\item developed a 2D camera image viewer (C++, Qt, OpenSceneGraph).
+	\item Developed a C++ middleware to grab and manage images from several dozens of image sensors.
+	\item Managed two co-workers to speed up development (roadmap, code review, scrum master).
+	\item Developed a 2D camera image viewer (C++, Qt, OpenSceneGraph).
 \end{itemize}
 % GPGPU
 Software lead on the GPGPU post-processing pipeline:
 \vspace{-0.33cm}
 \begin{itemize}
-\item ported the 3D reconstruction algorithm (Matlab) to a dual-GPU System (CMake, C++, CUDA 4, GTX 480)
- and speed it up from 15s to 7ms (x2000!).
-\item developed a CMake cross toolchain for managing CUDA files.
-\item developed a 3D PCB viewer (after 3D reconstruction) using (C++, Qt, OpenSceneGraph).
+	\item Ported the 3D reconstruction algorithm (Matlab) to a dual-GPU System (CMake, C++, CUDA 4, GTX 480)
+		and speed it up from 15s to 7ms (x2000!).
+	\item Developed a CMake cross toolchain for managing CUDA files.
+	\item Developed a 3D PCB viewer (after 3D reconstruction) using (C++, Qt, OpenSceneGraph).
 \end{itemize}
 
 Various support as technical lead on GNU/Linux:
 \vspace{-0.33cm}
 \begin{itemize}
-\item CMake training \& support.
-\item Jenkins training \& support (POC, setup, design).
-\item Linux training \& support (Bash, Fedora) (everyone else was on Windows).
+	\item CMake training \& support.
+	\item Jenkins training \& support (POC, setup, design).
+	\item Linux training \& support (Bash, Fedora) (everyone else was on Windows).
 \end{itemize}
-} {}
+} {
+R\&D GPGPU and Vision System Software Engineer\\
+\vspace{-0.33cm}
+
+Responsable de l'architecture et du d\'{e}veloppement de l'ensemble de la chaine d'acquisition et de traitement
+pour une nouvelle machine d'AOI (Automated Optical Inspection) pour l'\'{e}tape de SPI (Solder Past Inspection)
+tournant sous GNU/Linux (Fedora).
+
+% Hardware
+Software lead pour l'int\'{e}gration du syst\`{e}me d'acquisition mat\'{e}riel (Vertex-6 Card on PCIe):
+\vspace{-0.33cm}
+\begin{itemize}
+	\item Gestion de l'int\'{e}gration du FPGA.
+	\item D\'{e}finition du protocole entre le noyau Linux et la carte d'acquisition.
+	\item D\'{e}veloppement du pilote de p\'{e}riph\'{e}rique du noyau (C).
+	\item D\'{e}veloppement d'un outils de d\'{e}bogage (C++, Qt).
+\end{itemize}
+% Software
+Software lead sur le pipeline d'image:
+\vspace{-0.33cm}
+\begin{itemize}
+	\item D\'{e}veloppement d'un C++ middleware to grab and manage images from several dozens of image sensors.
+	\item Gestion de deux co-workers pour acc\'{e}l\'{e}rer le d\'{e}veloppement (roadmap, code review, scrum master).
+	\item D\'{e}veloppement d'un visualiseur d'image de cam\'{e}ra 2D (C++, Qt, OpenSceneGraph).
+\end{itemize}
+% GPGPU
+Software lead sur le pipeline de post-processing GPGPU:
+\vspace{-0.33cm}
+\begin{itemize}
+	\item Portage de l'agorithme de reconstruction 3D (Matlab) vers un syst\`{e}me bi-GPU (CMake, C++, CUDA 4, GTX 480)
+		et acc\'{e}l\'{e}ration de 15s \`{a} 7ms (x2000!).
+	\item D\'{e}veloppement d'une cross toolchain CMake pour g\'{e}rer les fichiers CUDA.
+	\item D\'{e}veloppement d'un visualiseur 3D de PCB apr\'{e}s reconstruction 3D (C++, Qt, OpenSceneGraph).
+\end{itemize}
+
+Supports divers commme responsable technique sur GNU/Linux:
+\vspace{-0.33cm}
+\begin{itemize}
+	\item CMake formation \& support.
+	\item Jenkins formation \& support (POC, setup, design).
+	\item Linux formation \& support (Bash, Fedora) (tout le monde \'{e}taient sur Windows).
+\end{itemize}
+}
 
 % Internship
 \employer{Kyushu University}\location{Fukuoka, Japan}
@@ -167,11 +222,19 @@ Various support as technical lead on GNU/Linux:
 Engineering intern at I.R.V.S. (laboratory for Intelligent Robots \& Vision System)
 \vspace{-0.33cm}
 \begin{itemize}
-\item design (UML), implementation (C++) and tooling viewer (C++, Qt) of a
-3D human pose estimation using non-parametric belief propagation
-algorithms and multiple 2D video cameras.
+	\item Design (UML), implementation (C++) and tooling viewer (C++, Qt) of a
+		3D human pose estimation using non-parametric belief propagation
+		algorithms and multiple 2D video cameras.
 \end{itemize}
-} {}
+} {
+Stage d'ing\'{e}nieur \`{a} l'I.R.V.S. (laboratory For Intelligent Robots \& Vision System)
+\vspace{-0.33cm}
+\begin{itemize}
+	\item Design (UML), implementation (C++) and tooling viewer (C++, Qt) of a
+		3D human pose estimation using non-parametric belief propagation
+		algorithms and multiple 2D video cameras.
+\end{itemize}
+}
 
 \employer{Kyushu University}\location{Fukuoka, Japan}
 \dates{06/2008--09/2008}
@@ -179,9 +242,15 @@ algorithms and multiple 2D video cameras.
 Engineering intern at I.R.V.S. (laboratory For Intelligent Robots \& Vision System)
 \vspace{-0.33cm}
 \begin{itemize}
-\item 3D Reconstruction on GPU (GLSL) and tooling viewer (C++, Qt) using stereovision algorithms and four 2D video cameras.
+	\item 3D Reconstruction on GPU (GLSL) and tooling viewer (C++, Qt) using stereovision algorithms and four 2D video cameras.
 \end{itemize}
-} {}
+} {
+Stage d'ing\'{e}nieur \`{a} l'I.R.V.S. (laboratory For Intelligent Robots \& Vision System)
+\vspace{-0.33cm}
+\begin{itemize}
+	\item 3D Reconstruction on GPU (GLSL) and tooling viewer (C++, Qt) using stereovision algorithms and four 2D video cameras.
+\end{itemize}
+}
 
 % Skills
 \IfLanguageName{english} {
@@ -201,7 +270,11 @@ Engineering intern at I.R.V.S. (laboratory For Intelligent Robots \& Vision Syst
 }
 
 % References
+\IfLanguageName{english} {
 \sectiontitle{References}
+} {
+\sectiontitle{R\'{e}f\'{e}rences}
+}
 \input{references.tex}
 \end{llist}
 
