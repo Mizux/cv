@@ -86,10 +86,10 @@
   {}
   [\titlerule]
 
-\newcommand*{\PlaceAndLocation}[2]{
+\newcommand{\PlaceAndLocation}[2]{
   {\textbf{#1} \tabto{\rightsidetab}{\faMapMarker*} {#2}}
 }
 
-\newcommand*{\TitleAndYears}[2]{
-  {\textit{#1} \tabto{\rightsidetab} {#2}}
+\newcommand{\TitleAndYears}[2]{
+  {\textit{#1} \tabto{\rightsidetab}{\faCalendar*} {#2}}
 }
