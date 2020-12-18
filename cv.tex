@@ -5,38 +5,37 @@
 \usepackage{iflang}
 \usepackage{resume}
 \usepackage{hyperref}
+
+% Adjust margins
+%\iffalse
+\iftrue
+\addtolength{\topmargin}{-2.0cm} % top margin
+\addtolength{\textheight}{2.0cm} % bottom margin
+\addtolength{\oddsidemargin}{-2.0cm} % left margin
+\addtolength{\textwidth}{4.0cm} % right margin
+%\addtolength{\evensidemargin}{-2.0cm}
+%\addtolength{\marginparsep}{0.1cm}
+\fi
+
 \begin{document}
 \selectlanguage{english}
-
 \name{\bf Corentin LE MOLGAT}
-
+\vspace{-0.80cm}
 T\'{e}l: +33 6 66 89 42 07\\
 \href{mailto:corentin.lemolgat@gmail.com}{\texttt{corentin.lemolgat@gmail.com}}\\
 \IfLanguageName{english} {
 Japanese spouse visa holder\\
 } {
 }
-
+\vspace{-0.80cm}
 \begin{llist}
-\sectiontitle{Education}
-
-\employer{ENSEIRB} \location{Bordeaux, France}
-\dates{09/2006--10/2009}
-\IfLanguageName{english} {
-B.S./M.S. in Computer Science with a specialty in HPC (High Performance Computing).
-} {
-Dipl\^{o}me d'ing\'{e}nieur en Informatique option PRCD (Parall\'{e}lisme,
-R\'{e}gulation et Calcul Distribu\'{e}).
-}
-
 % Working Experience
 \IfLanguageName{english} {
 \sectiontitle{Work Experience}
 } {
 \sectiontitle{Exp\'{e}rience Professionnelle}
 }
-\vspace{-0.33cm}
-
+\vspace{-0.60cm}
 \IfLanguageName{english} {
 \employer{Adecco, Contractor at Google LLC}
 } {
@@ -44,44 +43,8 @@ R\'{e}gulation et Calcul Distribu\'{e}).
 }
 \location{Paris, France}
 \dates{01/2020--01/2021}
-\IfLanguageName{english} {
-Open Source Software Release Manager\\
-\vspace{-0.33cm}
 
-Optimization Team:
-\vspace{-0.33cm}
-\begin{itemize}
-	\item Released several versions of
-    \href{https://github.com/google/or-tools}{\texttt{Google OR-Tools}} (PyPI, Nuget, Maven, GitHub).
-	\item Reworked and maintained the online documentation (HTML, markdown, doxygen).
-	\item Provided customer support (GitHub issues, Stack Overflow).
-	\item Developed and maintained samples (C++, Java, Python, .Net).
-	\item Maintained the Makefile based build system (Makefile, bash).
-	\item Maintained the Bazel based build system (Bazel).
-	\item Maintained the CMake based build system (CMake).
-	\item Developed and maintained a public CI system (GitHub wokrflows, Travis CI, Appveyor, Docker).
-	\item Provided training \& support for CMake.
-\end{itemize}
-} {
-Open Source Software Release Manager\\
-\vspace{-0.33cm}
-
-Equipe Optimization:
-\vspace{-0.33cm}
-\begin{itemize}
-	\item Publication de plusieurs versions de
-		\href{https://github.com/google/or-tools}{\texttt{Google OR-Tools}} (PyPI, Nuget, Maven, GitHub).
-  \item Refonte et maintenance de la \href{https://developers.google.com/optimization/}{\texttt{documention en ligne}} (HTML, markdown, doxygen).
-  \item Support propos\'{e} aux utilisateurs (GitHub issues, Stack Overflow).
-  \item D\'{e}veloppement et maintenance des examples (C++, Java, Python, .Net).
-  \item Maintenance du syst\`{e}me de build utilisant Makefile (Makefile, bash).
-  \item Maintenance du syst\`{e}me de build utilisant Bazel (Bazel).
-  \item D\'{e}veloppement et maintenance du syst\`{e}me de build utilisant CMake (CMake).
-  \item D\'{e}veloppement et maintenance du syst\`{e}me d'int\'{e}gration continue publique (GitHub workflow, Travis CI, Appveyor, Docker).
-  \item Formation \& support apport\'{e} sur CMake.
-\end{itemize}
-}
-
+\vspace{-0.60cm}
 \IfLanguageName{english} {
 \employer{Kelly Services, Contractor at Google LLC}
 } {
@@ -91,10 +54,8 @@ Equipe Optimization:
 \dates{11/2017--05/2019}
 \IfLanguageName{english} {
 Open Source Software Release Manager\\
-\vspace{-0.33cm}
-
 Optimization Team:
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item Released several versions of \href{https://github.com/google/or-tools}{\texttt{Google OR-Tools}} (PyPI, Nuget, GitHub).
 	\item Reworked and maintained the online documentation (HTML, markdown, doxygen).
@@ -108,10 +69,8 @@ Optimization Team:
 \end{itemize}
 } {
 Open Source Software Release Manager\\
-\vspace{-0.33cm}
-
 Equipe Optimization:
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item Publication de plusieurs versions de
 		\href{https://github.com/google/or-tools}{\texttt{Google OR-Tools}} (PyPI, Nuget, GitHub).
@@ -130,17 +89,15 @@ Equipe Optimization:
 \dates{04/2012--11/2017}
 \IfLanguageName{english} {
 Embedded System \& Computer Vision Software Engineer \\
-\vspace{-0.33cm}
-
 System Team:
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item Developed and maintained a Kernel Linux SoC Driver (C, MT9M114, OV5640).
 	\item Developed a camera firmware flasher (Archlinux \& Yocto, C++).
 	\item Managed a contractor for an UVC compliant firmware (CMake, Docker, C++, Catch, GTest, Plantuml).
 \end{itemize}
 Vision Team:
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item Reworked and maintained a C++ framework for multi-client access to robot cameras (CMake, C++, Boost).
 	\item Developed tooling for a camera viewer (C++, Qt).
@@ -150,24 +107,23 @@ Vision Team:
 	\item Provided training \& support for CMake and C++ as a senior developer.
 \end{itemize}
 Misc:
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item Supported the vision system for the R \& D team and research partners.
 	\item Provided support on the production line, Yantai (China), 1 month.
 \end{itemize}
 } {
-R\&D Ing\'{e}nieur Informaticien Vision par Ordinateur et Syst\`{e}me embarqu\'{e}
-\vspace{-0.33cm}
-
+R\&D Ing\'{e}nieur Informaticien Vision par Ordinateur et Syst\`{e}me
+embarqu\'{e} \\
 Equipe Syst\`{e}me:
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item D\'{e}veloppement et maintenance d'un driver SoC pour un noyau Linux (C, MT9M114, OV5640).
 	\item D\'{e}veloppement d'un chargeur de micrologiciel (firmware) pour une cam\'{e}ra (Archlinux \& Yocto, C++).
 	\item Gestion d'un fournisseur pour un micrologiciel compatible UVC (CMake, Docker, C++, Catch, GTest, Plantuml).
 \end{itemize}
 Equipe Vision:
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item Refonte et maintenance d'un framework C++ pour l'acc\`{e}s multi-clients aux cam\'{e}ras du robot (CMake, C++, Boost).
 	\item D\'{e}velopement d'outils de visualisation pour cameras (C++, Qt).
@@ -176,7 +132,7 @@ Equipe Vision:
 	\item Formation \& support sur CMake et C++ en tant que d\'{e}veloppeur s\'{e}nior.
 \end{itemize}
 Divers:
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item Support et formation sur l'utilisation du syst\`{e}me de vision pour l'\'{e}quipe de R \& D et les partenaires de recherche.
 	\item Support sur la ligne de production, Yantai (Chine), 1 mois.
@@ -187,15 +143,12 @@ Divers:
 \dates{02/2010--12/2011}
 \IfLanguageName{english} {
 R\&D GPGPU and Vision System Software Engineer\\
-\vspace{-0.33cm}
-
 Responsible for the design and development of the whole acquisition and processing pipeline
 for a new AOI (Automated Optical Inspection) system for SPI (Solder Past Inspection)
- running on Linux (Fedora).
-
+ running on Linux (Fedora).\\
 % Hardware
 Software lead for the hardware acquisition system integration (Vertex-6 Card on PCIe):
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item Managed the integration of the FPGA.
 	\item Defined the protocol between the Kernel and the acquisition card.
@@ -204,7 +157,7 @@ Software lead for the hardware acquisition system integration (Vertex-6 Card on 
 \end{itemize}
 % Software
 Software lead on the image pipeline:
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item Developed a C++ middleware to grab and manage images from several dozens of image sensors.
 	\item Managed two co-workers to speed up development (roadmap, code review, scrum master).
@@ -212,16 +165,15 @@ Software lead on the image pipeline:
 \end{itemize}
 % GPGPU
 Software lead on the GPGPU post-processing pipeline:
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item Ported the 3D reconstruction algorithm (Matlab) to a dual-GPU System (CMake, C++, CUDA 4, GTX 480)
 		and speed it up from 15s to 7ms (x2000!).
 	\item Developed a CMake cross toolchain for managing CUDA files.
 	\item Developed a 3D PCB viewer (after 3D reconstruction) using (C++, Qt, OpenSceneGraph).
 \end{itemize}
-
 Various support as technical lead on GNU/Linux:
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item CMake training \& support.
 	\item Jenkins training \& support (PoC, setup, design).
@@ -229,15 +181,13 @@ Various support as technical lead on GNU/Linux:
 \end{itemize}
 } {
 R\&D Ing\'{e}nieur Informaticien Syst\`{e}me de Vision et GPGPU\\
-\vspace{-0.33cm}
-
+%\vspace{-0.50cm}
 Responsable de l'architecture et du d\'{e}veloppement de l'ensemble de la chaine d'acquisition et de traitement
 pour une nouvelle machine d'AOI (Automated Optical Inspection) pour l'\'{e}tape de SPI (Solder Past Inspection)
-tournant sous GNU/Linux (Fedora).
-
+tournant sous GNU/Linux (Fedora).\\
 % Hardware
 Software lead pour l'int\'{e}gration du syst\`{e}me d'acquisition mat\'{e}riel (Vertex-6 Card on PCIe):
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item Gestion de l'int\'{e}gration du FPGA.
 	\item D\'{e}finition du protocole entre le noyau Linux et la carte d'acquisition.
@@ -246,7 +196,7 @@ Software lead pour l'int\'{e}gration du syst\`{e}me d'acquisition mat\'{e}riel (
 \end{itemize}
 % Software
 Software lead sur le pipeline d'image:
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item D\'{e}veloppement d'un middleware d'acquisition et de gestion des
 		images depuis deux douzaines de capteurs CMOS (C++).
@@ -255,16 +205,15 @@ Software lead sur le pipeline d'image:
 \end{itemize}
 % GPGPU
 Software lead sur le pipeline de post-processing GPGPU:
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item Portage de l'agorithme de reconstruction 3D (Matlab) vers un syst\`{e}me bi-GPU (CMake, C++, CUDA 4, GTX 480)
 		et acc\'{e}l\'{e}ration de 15s \`{a} 7ms (x2000!).
 	\item D\'{e}veloppement d'une cross toolchain CMake pour g\'{e}rer les fichiers CUDA.
 	\item D\'{e}veloppement d'un visualiseur 3D de PCB apr\'{e}s reconstruction 3D (C++, Qt, OpenSceneGraph).
 \end{itemize}
-
 Supports divers commme responsable technique sur GNU/Linux:
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item CMake formation \& support.
 	\item Jenkins formation \& support (PoC, setup, design).
@@ -277,7 +226,7 @@ Supports divers commme responsable technique sur GNU/Linux:
 \dates{04/2009--10/2009}
 \IfLanguageName{english} {
 Engineering intern at I.R.V.S. (laboratory for Intelligent Robots \& Vision System)
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item Design (UML) and implementation (C++) of a
 		3D human pose estimation using non-parametric belief propagation
@@ -286,7 +235,7 @@ Engineering intern at I.R.V.S. (laboratory for Intelligent Robots \& Vision Syst
 \end{itemize}
 } {
 Stage d'ing\'{e}nieur \`{a} l'I.R.V.S. (laboratory For Intelligent Robots \& Vision System)
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item Conception (UML) et impl\'{e}mentation (C++) d'un algorithme
 		d'estimation de pose humaine en 3D par propagation de croyance
@@ -299,19 +248,29 @@ Stage d'ing\'{e}nieur \`{a} l'I.R.V.S. (laboratory For Intelligent Robots \& Vis
 \dates{06/2008--09/2008}
 \IfLanguageName{english} {
 Engineering intern at I.R.V.S. (laboratory For Intelligent Robots \& Vision System)
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item 3D Reconstruction on GPU (GLSL) using stereovision algorithms and four 2D video cameras.
 	\item Developed a tooling viewer (C++, Qt).
 \end{itemize}
 } {
 Stage d'ing\'{e}nieur \`{a} l'I.R.V.S. (laboratory For Intelligent Robots \& Vision System)
-\vspace{-0.33cm}
+\vspace{-0.50cm}
 \begin{itemize}
 	\item Reconstruction 3D d'une sc\`{e}ne sur GPU (GLSL) utilisant un algorithme
 		de st\'{e}r\'{e}ovision et 4 cam\'{e}ras monochromes.
 	\item D\'{e}veloppement d'une application de visualisation (C++, Qt).
 \end{itemize}
+}
+
+\sectiontitle{Education}
+\employer{ENSEIRB} \location{Bordeaux, France}
+\dates{09/2006--10/2009}
+\IfLanguageName{english} {
+B.S./M.S. in Computer Science with a specialty in HPC (High Performance Computing).
+} {
+Dipl\^{o}me d'ing\'{e}nieur en Informatique option PRCD (Parall\'{e}lisme,
+R\'{e}gulation et Calcul Distribu\'{e}).
 }
 
 % Skills
