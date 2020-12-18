@@ -4,7 +4,20 @@
 \usepackage{eurosym}
 \usepackage{iflang}
 \usepackage{resume}
-\usepackage{hyperref}
+
+% define some colors
+\usepackage{xcolor}
+\definecolor{highlight}{HTML}{283559}
+\definecolor{link}{HTML}{0A66C2} % light blue
+% coloring of links
+\usepackage[
+	colorlinks = true,
+	urlcolor = link,
+	%linkcolor = link,
+	%citecolor= highlight
+]{hyperref}
+%\usepackage{hyperref}
+\usepackage{fontawesome5}
 
 % Adjust margins
 %\iffalse
@@ -13,16 +26,19 @@
 \addtolength{\textheight}{2.0cm} % bottom margin
 \addtolength{\oddsidemargin}{-2.0cm} % left margin
 \addtolength{\textwidth}{4.0cm} % right margin
-%\addtolength{\evensidemargin}{-2.0cm}
-%\addtolength{\marginparsep}{0.1cm}
 \fi
+
+\newcommand{\colorLinkedinSign}
+{\textcolor{rgb:red,6;green,108;blue,170}{\faLinkedinSign}}
 
 \begin{document}
 \selectlanguage{english}
 \name{\bf Corentin LE MOLGAT}
 \vspace{-0.80cm}
-T\'{e}l: +33 6 66 89 42 07\\
 \href{mailto:corentin.lemolgat@gmail.com}{\texttt{corentin.lemolgat@gmail.com}}\\
+T\'{e}l: +33 6 66 89 42 07\\
+\faLinkedin~\href{https://www.linkedin.com/in/corentin-le-molgat-a957893b/}{\texttt{Corentin Le Molgat}}
+\faGithub~\href{https://github.com/Mizux}{\texttt{Mizux}}\\
 \IfLanguageName{english} {
 Japanese spouse visa holder\\
 } {
@@ -57,8 +73,11 @@ Open Source Software Release Manager\\
 Optimization Team:
 \vspace{-0.50cm}
 \begin{itemize}
-	\item Released several versions of \href{https://github.com/google/or-tools}{\texttt{Google OR-Tools}} (PyPI, Nuget, GitHub).
-	\item Reworked and maintained the online documentation (HTML, markdown, doxygen).
+	\item Released several versions of
+    \href{https://github.com/google/or-tools}{\texttt{Google OR-Tools}} (PyPI, Nuget, GitHub).
+	\item Reworked and maintained the
+    \href{https://developers.google.com/optimization/}{\texttt{online documentation}}
+    (HTML, markdown, doxygen).
 	\item Provided support to customer (GitHub issues, Stack Overflow).
 	\item Developed and maintained few samples (C++, Java, Python, .Net).
 	\item Maintained the Makefile based build system (Makefile, bash).
@@ -74,7 +93,9 @@ Equipe Optimization:
 \begin{itemize}
 	\item Publication de plusieurs versions de
 		\href{https://github.com/google/or-tools}{\texttt{Google OR-Tools}} (PyPI, Nuget, GitHub).
-  \item Refonte et maintenance de la \href{https://developers.google.com/optimization/}{\texttt{documention en ligne}} (HTML, markdown, doxygen).
+  \item Refonte et maintenance de la
+    \href{https://developers.google.com/optimization/}{\texttt{documention en ligne}}
+    (HTML, markdown, doxygen).
   \item Support propos\'{e} aux utilisateurs (GitHub issues, Stack Overflow).
   \item D\'{e}veloppement et maintenance de plusieurs examples (C++, Java, Python, .Net).
   \item Maintenance du syst\`{e}me de build utilisant Makefile (Makefile, bash).
