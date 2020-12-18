@@ -70,11 +70,15 @@
   {\faHome} {#1}, {#2} {#3}\\
 }
 
-\newcommand{\ContactInfoDigital}[8]{
+\newcommand{\ContactInfoDigital}[6]{
   {\faPhone} \href{#1}{#2}  |
   {\faEnvelope} \href{#3}{#4}  |
-  {\faLinkedin} \href{#5}{#6}  |
-  {\faGithub} \href{#7}{#8}\\
+  {\faLinkedin} \href{#5}{#6}\\
+}
+
+\newcommand{\ContactDevDigital}[4]{
+  {\faGithub} \href{#1}{#2} |
+  {\faStackOverflow} \href{#3}{#4}\\
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
